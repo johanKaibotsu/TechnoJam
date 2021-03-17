@@ -5,9 +5,9 @@ def fight(ls,n,Q):
 			k-=1
 		if ls[i]=='0':
 			k+=1
-	if k<4:
+	if k<4 and k>-4:
 		print(Q[k])
-	elif k>4:
+	else:
 		print(Q[k%4])
 Q=['tywin','hound','jaime','mountain']
 t=int(input())
